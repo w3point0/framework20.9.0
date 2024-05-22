@@ -51,6 +51,10 @@
     "morgan": "~1.9.1",
     "nodemon": "^3.1.0",
     "passport": "^0.7.0",
-    "passport-local-mongoose": "^8.0.0"
+    "passport-local-mongoose": "^8.0.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
