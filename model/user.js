@@ -1,23 +1,56 @@
 const mongoose = require('mongoose');
 const passportLocalMongoose = require('passport-local-mongoose');
 
-let uri = process.env.MONGO_USERS;
+const uri = process.env.MONGO_USERS || 'mongodb://localhost/mc1users';
 const USERS_URI = uri ? uri : 'mongodb://localhost/mc1users';
-let connectLog = uri ? '==> Connected to remote user database.' : '==> Connected to localhost user database';
-console.log(connectLog);
+
 const userDB = mongoose.createConnection(USERS_URI, {});
 
-const Schema = mongoose.Schema;     // Create Model
-const User = new Schema({
-    username: String,
-    password: String,
-    email: String,
-    firstName: String,
-    lastName: String,
-    role: String,
-    active: Boolean
+// Create Schema
+const { Schema } = mongoose;
+const UserSchema = new Schema({
+    username: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true,
+        match: [/.+@.+\..+/, 'Please fill a valid email address']
+    },
+    firstName: {
+        type: String,
+        required: true
+    },
+    lastName: {
+        type: String,
+        required: true
+    },
+    role: {
+        type: String,
+        enum: ['user', 'admin'],
+        default: 'user'
+    },
+    active: {
+        type: Boolean,
+        default: true
+    }
 });
 
-User.plugin(passportLocalMongoose);     // Add the passport stuff before exporting.
+// Add passportLocalMongoose plugin
+UserSchema.plugin(passportLocalMongoose);
 
-module.exports = userDB.model('userData', User, 'userData');
+// Export the model
+module.exports = userDB.model('User', UserSchema, 'userData');
+
+// Error Handling for Connection
+userDB.on('error', console.error.bind(console, 'MongoDB connection error:'));
+userDB.once('open', () => {
+ 
+});
