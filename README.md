@@ -1,6 +1,8 @@
 # transcribe
 AI Transcription
 
+> Prime Directive
+
 ```
 Using: node v20.9.0 ECMAScript features
 ```
