@@ -16,7 +16,8 @@ npm install
 This project has been developed using GitHub Codespaces and includes all the infrastructure components needed to get you started. See .devcontainer for more details.
 
 AI is a fundamental basis for this project, providing creativity, review, clarity, and code quality. AI is a developer's best friend.
-Prompts 
+
+## Prompts 
 
 Code Prompt
 ```
