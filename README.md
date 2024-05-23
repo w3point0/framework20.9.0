@@ -5,7 +5,7 @@ Fun Facts
 
 - Node version 20.9.0
 - Node native test runner
-- Mongo 7.04.4
+- Mongo July 2025. MongoDB 7.0 
 - Debian GNU/Linux 10 (buster) as of 5/23/2024
 
 
