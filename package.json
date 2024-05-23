@@ -2,7 +2,7 @@
   "name": "framework20.9.0",
   "version": "0.0.1",
   "description": "Node 20.9.0 framework",
-  "main": "app.js",
+  "main": "app.mjs",
   "engines": {
     "node": "20.9.0"
   },
@@ -30,7 +30,7 @@
     "jest",
     "encryption"
   ],
-  "author": "",
+  "author": "David Mallon",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/w3point0/framework20.9.0/issues"
@@ -44,9 +44,10 @@
     ]
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "winston": "^3.13.0",
-    "mongoose": "^8.4.0"
+    "mongoose": "^8.4.0",
+    "winston": "^3.13.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.3.0",

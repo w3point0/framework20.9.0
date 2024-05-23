@@ -1,4 +1,5 @@
 import express from 'express';
+import 'dotenv/config';
 import logger from './logger.mjs';
 import { function1, function2, function3, function4, errorHandler } from './middleware/functions.mjs';
 
@@ -18,7 +19,7 @@ const _function4 = createMiddleware(function4);
 
 // Define error handling middleware
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3000;
 
 // Add payload initialization middleware
 app.use((req, res, next) => {
