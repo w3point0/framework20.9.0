@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 import passportLocalMongoose from 'passport-local-mongoose';
-import logger from './logger.mjs';
+import logger from '../logger.mjs';
 
 const uri = process.env.MONGO_USERS || 'mongodb://localhost/mc1users';
 const USERS_URI = uri ? uri : 'mongodb://localhost/mc1users';
@@ -22,8 +22,8 @@ const UserSchema = new Schema({
     email: {
         type: String,
         required: true,
-        unique: true,
-        match: [/.+@.+\..+/, 'Please fill a valid email address']
+        unique: true
+        
     },
     firstName: {
         type: String,

@@ -1,88 +1,97 @@
 /* eslint-disable no-undef */
+// file: test/userModel.test.mjs
+
+import { describe, it, before, after } from 'node:test';
+import assert from 'assert';
 import mongoose from 'mongoose';
-import { MongoMemoryServer } from 'mongodb-memory-server';
-import User from '../path_to_your_model_file';  // adjust the path as necessary
- 
-
-jest.mock('../path_to_your_logger_file'); // mock the logger to avoid actual logging during tests
-
-let mongoServer;
-
-beforeAll(async () => {
-    mongoServer = await MongoMemoryServer.create();
-    const uri = mongoServer.getUri();
-
-    mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
-        if (err) console.error(err);
-    });
-});
-
-afterAll(async () => {
-    await mongoose.disconnect();
-    await mongoServer.stop();
-});
+import User from '../user.mjs'; // Adjust the path as necessary
 
 describe('User Model Test', () => {
-    it('should create and save a user successfully', async () => {
-        const validUser = new User({
-            username: 'testuser',
-            password: 'testpassword',
-            email: 'testuser@example.com',
-            firstName: 'Test',
-            lastName: 'User',
-            role: 'user',
-            active: true
-        });
+  before(async () => {
+    try {
+      await mongoose.connect('mongodb://localhost/testDB', {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      });
+      console.log('Connected to MongoDB');
+      await User.deleteMany({});
+      console.log('Cleared User collection');
+    } catch (error) {
+      console.error('Error in before hook:', error);
+      throw error;
+    }
+  });
 
-        const savedUser = await validUser.save();
+  it('should create a new user with valid data', async () => {
+    const userData = {
+      username: 'testuser',
+      password: 'testpassword',
+      email: 'testuser@example.com',
+      firstName: 'Test',
+      lastName: 'User',
+      role: 'user',
+      active: true,
+    };
 
-        // Verify the user details
-        expect(savedUser._id).toBeDefined();
-        expect(savedUser.username).toBe(validUser.username);
-        expect(savedUser.email).toBe(validUser.email);
-        expect(savedUser.firstName).toBe(validUser.firstName);
-        expect(savedUser.lastName).toBe(validUser.lastName);
-        expect(savedUser.role).toBe(validUser.role);
-        expect(savedUser.active).toBe(validUser.active);
-    });
+    try {
+      const user = new User(userData);
+      const savedUser = await user.save();
 
-    it('should not save a user with invalid email', async () => {
-        const invalidUser = new User({
-            username: 'testuser2',
-            password: 'testpassword2',
-            email: 'invalid-email',
-            firstName: 'Test',
-            lastName: 'User',
-            role: 'user',
-            active: true
-        });
+      assert.strictEqual(savedUser.username, 'testuser');
+      assert.strictEqual(savedUser.email, 'testuser@example.com');
+      assert.strictEqual(savedUser.firstName, 'Test');
+      assert.strictEqual(savedUser.lastName, 'User');
+      assert.strictEqual(savedUser.role, 'user');
+      assert.strictEqual(savedUser.active, true);
+    } catch (error) {
+      console.error('Error in creating valid user:', error);
+      throw error;
+    }
+  });
 
-        let err;
-        try {
-            await invalidUser.save();
-        } catch (error) {
-            err = error;
-        }
+  it('should not create a user with invalid email', async () => {
+    const userData = {
+      username: 'invalidemailuser',
+      password: 'testpassword',
+      email: 'invalid-email',
+      firstName: 'Test',
+      lastName: 'User',
+      role: 'user',
+      active: true,
+    };
 
-        expect(err).toBeDefined();
-        expect(err.errors.email).toBeDefined();
-    });
+    try {
+      const user = new User(userData);
+      await user.save();
+    } catch (err) {
+      assert.strictEqual(err.errors.email.kind, 'user defined');
+    }
+  });
 
-    it('should not save a user without required fields', async () => {
-        const userWithoutRequiredFields = new User({});
+  it('should not create a user without required fields', async () => {
+    const userData = {
+      username: 'missingfieldsuser',
+      // Missing password, email, firstName, lastName
+    };
 
-        let err;
-        try {
-            await userWithoutRequiredFields.save();
-        } catch (error) {
-            err = error;
-        }
+    try {
+      const user = new User(userData);
+      await user.save();
+    } catch (err) {
+      assert.strictEqual(err.errors.password.kind, 'required');
+      assert.strictEqual(err.errors.email.kind, 'required');
+      assert.strictEqual(err.errors.firstName.kind, 'required');
+      assert.strictEqual(err.errors.lastName.kind, 'required');
+    }
+  });
 
-        expect(err).toBeDefined();
-        expect(err.errors.username).toBeDefined();
-        expect(err.errors.password).toBeDefined();
-        expect(err.errors.email).toBeDefined();
-        expect(err.errors.firstName).toBeDefined();
-        expect(err.errors.lastName).toBeDefined();
-    });
+  after(async () => {
+    try {
+      await mongoose.connection.close();
+      console.log('Closed MongoDB connection');
+    } catch (error) {
+      console.error('Error in after hook:', error);
+      throw error;
+    }
+  });
 });
