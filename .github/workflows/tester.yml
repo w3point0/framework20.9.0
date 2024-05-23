@@ -40,3 +40,4 @@ jobs:
 
       - name: Shut down containers
         run: docker-compose -f .devcontainer/docker-compose.yml down
+
