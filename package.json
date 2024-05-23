@@ -1,8 +1,8 @@
 {
-  "name": "transcibe",
+  "name": "framework20.9.0",
   "version": "0.0.1",
-  "description": "AI Transcription and Storage",
-  "main": "index.js",
+  "description": "Node 20.9.0 framework",
+  "main": "app.js",
   "engines": {
     "node": "20.9.0"
   },
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/w3point0/transcribe.git"
+    "url": "git+https://github.com/w3point0/framework20.9.0.git"
   },
   "keywords": [
     "node",
@@ -33,9 +33,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/w3point0/transcribe/issues"
+    "url": "https://github.com/w3point0/framework20.9.0/issues"
   },
-  "homepage": "https://github.com/w3point0/transcribe#readme",
+  "homepage": "https://github.com/w3point0/dframework20.9.0#readme",
   "nodemonConfig": {
     "ignore": [
       "audio/*",
@@ -44,25 +44,9 @@
     ]
   },
   "dependencies": {
-    "@ffmpeg-installer/ffmpeg": "^1.1.0",
-    "assemblyai": "^4.4.1",
-    "axios": "^1.6.8",
-    "body-parser": "^1.20.2",
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
     "express": "^4.19.2",
-    "express-fileupload": "^1.5.0",
-    "express-session": "^1.18.0",
-    "ffmpeg": "^0.0.4",
-    "ffmpeg-extract-audio": "^1.0.2",
-    "fs-extra": "^11.2.0",
-    "hbs": "^4.2.0",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
-    "nodemon": "^3.1.0",
-    "passport": "^0.7.0",
-    "path": "^0.12.7",
-    "winston": "^3.13.0"
+    "winston": "^3.13.0",
+    "mongoose": "^8.4.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.3.0",
