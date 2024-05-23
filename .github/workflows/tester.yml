@@ -16,9 +16,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
-
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
@@ -30,11 +27,16 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-buildx-
 
-      - name: Build and tag container
-        run: docker build --tag my-container:dev --file .devcontainer/Dockerfile .
+      - name: Set up Docker Compose
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose
 
-      - name: Run container
-        run: docker run my-container
+      - name: Build and start containers
+        run: docker-compose -f .devcontainer/docker-compose.yml up --build -d
 
       - name: Run tests
-        run: docker run my-container:npm test
+        run: docker-compose -f .devcontainer/docker-compose.yml run app npm test
+
+      - name: Shut down containers
+        run: docker-compose -f .devcontainer/docker-compose.yml down
