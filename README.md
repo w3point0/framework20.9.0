@@ -1,7 +1,9 @@
 # transcribe
 AI Transcription
 
-> Prime Directive
+> Prime Directive  
+> ![image](https://github.com/w3point0/transcribe/assets/993459/903e0b16-fb0f-4e0b-b205-559bfb7f6531)  
+
 
 ```
 Using: node v20.9.0 ECMAScript features
