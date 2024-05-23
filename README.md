@@ -1,6 +1,9 @@
 # transcribe
 AI Transcription
 
+```
+Using: node v20.9.0 ECMAScript features
+```
 ### Linter
 ```
 npx eslint model/user.js  
