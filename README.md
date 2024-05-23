@@ -1,6 +1,15 @@
 # framework20.9.0
 ## AI Prompts and Middleware Centric Node.JS Code Best Practices  
 
+Fun Facts  
+
+- Node version 20.9.0
+- Node native test runner
+- Mongo 7.04.4
+- Debian GNU/Linux 10 (buster) as of 5/23/2024
+
+
+
 This project has been developed using GitHub Codespaces and includes all the infrastructure components needed to get you started. See .devcontainer for more details.
 
 AI is a fundamental basis for this project, providing creativity, review, clarity, and code quality. AI is a developer's best friend.
