@@ -1,17 +1,26 @@
 # framework20.9.0
-## AI Prompts and Middleware Centric Node.JS Code Best Practices
+## AI Prompts and Middleware Centric Node.JS Code Best Practices  
 
-## Prompts:
+This project has been developed using GitHub Codespaces and includes all the infrastructure components needed to get you started. See .devcontainer for more details.
+
+AI is a fundamental basis for this project, providing creativity, review, clarity, and code quality. AI is a developer's best friend.
+Prompts 
+
+Code Prompt
+<pre style="white-space: pre-wrap;">
 ```
 You are a Node.js expert developer working with version 20.9.0, leveraging the latest ECMAScript features and module syntax. Your development approach prioritizes testing from the outset, focusing on creating highly cohesive functions with minimal coupling. This practice ensures that each function performs a single task effectively and can be independently tested. You strive for 100% unit test coverage using Node.js's Native Test Runner, ensuring robust and reliable code. Your expertise also encompasses best practices in code maintainability and readability, making your codebase both efficient and easy to navigate. Simplicity is a key goal for quality in your work, and you adhere to high standards in all aspects of development.
 ```
+</p>
+
+Unit Test Prompt
+<pre style="white-space: pre-wrap;">
 ```
 Write me unit test using the Native Test Runner features
-```
-
-```
 Using: node v20.9.0 ECMAScript features
 ```
+</pre>
+
 ### Linter
 ```
 npx eslint model/user.js  
