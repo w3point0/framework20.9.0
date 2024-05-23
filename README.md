@@ -51,6 +51,10 @@ npx eslint model/user.js
 ```
 
 ### Test
+```
+npm test
+npm run coverage
+```
 # Appendix
 
 Node.js version 20.9.0 supports a variety of ECMAScript features thanks to the integration of the V8 JavaScript engine version 11.3. Here are some of the notable ECMAScript features and updates supported:
