@@ -28,7 +28,7 @@ function function4(payload) {
 
 
 // Define error handling middleware
-function errorHandler(err, req, res, next) {
+function errorHandler(err, req, res) {
     console.error(err.stack);
     res.status(499).send('Something broke!');
 }
