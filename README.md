@@ -8,7 +8,10 @@ Fun Facts
 - Mongo July 2025. MongoDB 7.0 
 - Debian GNU/Linux 10 (buster) as of 5/23/2024
 
-
+First Things 
+```
+npm install
+```
 
 This project has been developed using GitHub Codespaces and includes all the infrastructure components needed to get you started. See .devcontainer for more details.
 
