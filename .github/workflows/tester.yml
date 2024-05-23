@@ -34,7 +34,7 @@ jobs:
         run: docker build --tag my-container:dev --file .devcontainer/Dockerfile .
 
       - name: Run container
-        run: docker run my-container:dev
+        run: docker run my-container
 
       - name: Run tests
-        run: docker run my-container:dev npm test
+        run: docker run my-container:npm test
