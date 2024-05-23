@@ -43,6 +43,7 @@ Unit Test Prompt
 ```
 Write me unit test using the Native Test Runner features  
 Using: node v20.9.0 ECMAScript features
+<paste code here that will be unit tested>
 ```
 ### Secrets 
 Use Codespaces secrets to load environment variables  
