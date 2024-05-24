@@ -1,4 +1,4 @@
-Check out the framework20.9.0 GitHub repository README.md for a streamlined Node.js server template that nails simplicity and best practices. Geared towards developers hunting for a lean yet potent framework to craft powerful server-side applications, this template is a game-challengeer.
+Check out the framework20.9.0 GitHub repository for a streamlined Node.js server template that nails simplicity and best practices. Geared towards developers hunting for a lean yet potent framework to craft powerful server-side applications, this template is a game-challengeer.
 
 Why you should be psyched:
 
