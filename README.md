@@ -19,7 +19,7 @@ Fun Facts
 - Pure HTML and Components
 - No React, Angular or other heavy framework. Pure HTML and custom components (next wave)
 - No transpilers, compilers -- just plan old ECMAScript 2023
-- No setup, if you use Codespaces, just npm install
+- No setup, if you use Codespaces 
 
 ### First Things 
 
