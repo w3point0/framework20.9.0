@@ -7,6 +7,7 @@ Fun Facts
 - Node native test runner
 - Mongo July 2025. MongoDB 7.0 
 - Debian GNU/Linux 10 (buster) as of 5/23/2024
+- Index.html is only to be used as an API Dashboard
 
 First Things 
 ```
