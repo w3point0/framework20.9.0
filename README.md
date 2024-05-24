@@ -23,7 +23,10 @@ Fun Facts
 
 First Things 
 ```
-npm install
+Nothing! If you use Git's Codespaces everything is setup. Talking about infrastructure as code. Dive in.
+
+> node app.mjs will start the web application. That's all folks.
+
 ```
 
 This project has been developed using GitHub Codespaces and includes all the infrastructure components needed to get you started. See .devcontainer for more details.
