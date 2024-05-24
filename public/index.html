@@ -1,86 +1,94 @@
 <!doctype html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <base href="./">
-    <title>Main page</title>
-    <meta property="og:title" content="Main page" />
-    <meta name="twitter:title" content="Main page" />
-    <meta name="description" content="This is the main (index) page of your project." />
-    <meta name="og:description" content="This is the main (index) page of your project." />
-    <meta name="twitter:description" content="This is the main (index) page of your project." />
-    <link rel="icon" sizes="any" href="assets/uploads/favicon.png?p=KECOqbuX&t=1716508752" type="image/png">
-<link rel="icon" sizes="192x192" href="assets/uploads/favicon-192x192.png?p=KECOqbuX&t=1716508752" type="image/png">
-<link rel="icon" sizes="96x96" href="assets/uploads/favicon-96x96.png?p=KECOqbuX&t=1716508752" type="image/png">
-<link rel="icon" sizes="48x48" href="assets/uploads/favicon-48x48.png?p=KECOqbuX&t=1716508752" type="image/png">
-<link rel="icon" sizes="32x32" href="assets/uploads/favicon-32x32.png?p=KECOqbuX&t=1716508752" type="image/png">
-<link rel="icon" sizes="16x16" href="assets/uploads/favicon-16x16.png?p=KECOqbuX&t=1716508752" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <base href="./">
+  <title>Main page</title>
+  <meta property="og:title" content="Main page" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-            <!-- Compressed Styles -->
-        <link href="css/slides.min.css?62360" rel="stylesheet" type="text/css" id="js-slides-css">
-    
-    
-    <!-- Fonts and Material Icons -->
-    <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css2?family=Material+Icons&display=swap" id="js-google-fonts" />
-    <style id="js-slides-fonts">
-        .slides { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; }
-    </style>
-    
-    <link rel="preload" href="assets/svg/icon-set.svg?p=KECOqbuX" as="image" type="image/svg+xml" crossorigin>
+  <link rel="icon" sizes="any" href="assets/uploads/favicon.png?p=KECOqbuX&t=1716508752" type="image/png">
+  <link rel="icon" sizes="192x192" href="assets/uploads/favicon-192x192.png?p=KECOqbuX&t=1716508752" type="image/png">
+  <link rel="icon" sizes="96x96" href="assets/uploads/favicon-96x96.png?p=KECOqbuX&t=1716508752" type="image/png">
+  <link rel="icon" sizes="48x48" href="assets/uploads/favicon-48x48.png?p=KECOqbuX&t=1716508752" type="image/png">
+  <link rel="icon" sizes="32x32" href="assets/uploads/favicon-32x32.png?p=KECOqbuX&t=1716508752" type="image/png">
+  <link rel="icon" sizes="16x16" href="assets/uploads/favicon-16x16.png?p=KECOqbuX&t=1716508752" type="image/png">
 
-    <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <!-- Compressed Styles -->
+  <link href="css/slides.min.css?62360" rel="stylesheet" type="text/css" id="js-slides-css">
+
+
+  <!-- Fonts and Material Icons -->
+  <link rel="stylesheet" as="font" href="https://fonts.googleapis.com/css2?family=Material+Icons&display=swap"
+    id="js-google-fonts" />
+  <style id="js-slides-fonts">
+    .slides {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+  </style>
+
+  <link rel="preload" href="assets/svg/icon-set.svg?p=KECOqbuX" as="image" type="image/svg+xml" crossorigin>
+
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body class="slides animated noPreload">
 
-<!-- Component Hook-->
-<div id="app"></div>
-<script src="CustomComponent.js"></script>
-<script src="main.js"></script>
+  <!-- Component Hook-->
+  <div id="app"></div>
+  <script src="./js/CustomComponent.js"></script>
+  <script src="./js/main.js"></script>
 
-<!-- Navigation -->
-<nav class="side ">
-  <div class="navigation default">
-    <ul></ul>
-  </div>
-</nav><!-- Example Popup iframe (#1) -->
-<div data-cid="example-BKxWUijy-a3603585">
-<!-- All Popup buttons -->
-<section class="slide fade-6 whiteSlide">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-      
-        <div class="fix-12-12">
-          <button class="button small popupTrigger green" data-popup-id="1">Components</button>
+  <!-- Navigation -->
+  <nav class="side ">
+    <div class="navigation default">
+      <ul></ul>
+    </div>
+  </nav><!-- Example Popup iframe (#1) -->
+  <div data-cid="example-BKxWUijy-a3603585">
+    <!-- All Popup buttons -->
+    <section class="slide fade-6 whiteSlide">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+
+            <div class="fix-12-12">
+              <button class="button small popupTrigger green" data-popup-id="1">Components</button>
+            </div>
+
+          </div>
         </div>
-        
       </div>
-    </div> 
-  </div>
-</section>
+    </section>
 
-<!-- Popup iframe -->
-<div class="popup fullscreen" data-popup-id="1">
-  <div class="close"><svg><use href="assets/svg/icons.svg#close"></use></svg></div>
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="popupContent embedVideo">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/2I7uX8m0Ta0?si=G9WO32ziBbpLB2TQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Popup iframe -->
+    <div class="popup fullscreen" data-popup-id="1">
+      <div class="close"><svg>
+          <use href="assets/svg/icons.svg#close"></use>
+        </svg></div>
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+            <div class="popupContent embedVideo">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/2I7uX8m0Ta0?si=G9WO32ziBbpLB2TQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-</div>
-<!-- jQuery 3.6.0 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- Compressed Scripts -->
-    <script src="js/slides.min.js?62360" type="text/javascript"></script>
-        
+  </div>
+  <!-- jQuery 3.6.0 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Compressed Scripts -->
+  <script src="js/slides.min.js?62360" type="text/javascript"></script>
+
 </body>
+
 </html>
