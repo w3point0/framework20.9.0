@@ -2,6 +2,11 @@
 
 ![image](https://github.com/w3point0/framework20.9.0/assets/993459/3c3901a9-464c-47f6-a235-6c1f1138dc18)
 
+Motivation 
+
+While prototyping code generation using ChatGPT, I set out to create a Node.js server template with best-of-breed design principles. The goal was to enable developers to focus on functions that could be unit tested without the typical request-response coupling. This decoupling simplifies debugging and allows for running unit tests without needing the service to be running. The ultimate goal is to achieve 100% code coverage.
+
+
 
 ## AI Prompts and Middleware Centric Node.JS Code Best Practices  
 

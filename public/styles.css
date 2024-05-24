@@ -1,0 +1,12 @@
+.custom-component {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #333;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
