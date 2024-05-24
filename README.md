@@ -1,6 +1,7 @@
 # Node framework20.9.0
 
-![image](https://github.com/w3point0/framework20.9.0/assets/993459/662fd75c-0539-402c-8598-4f4687b0aa85)
+![image](https://github.com/w3point0/framework20.9.0/assets/993459/3c3901a9-464c-47f6-a235-6c1f1138dc18)
+
 
 ## AI Prompts and Middleware Centric Node.JS Code Best Practices  
 
