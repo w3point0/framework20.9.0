@@ -59,7 +59,7 @@ Using: node v20.9.0 ECMAScript features
 <paste code here that will be unit tested>
 ```
 
-Demo Notes  
+## Demo Notes  
 - When you start the app you can open an html file that is in the public folder. This will show two buttons
 - At the browser window add the path /stream and you will see a simple not. Please view the console output for verification of the /stream run. See app.mjs get /stream
 
