@@ -21,6 +21,9 @@ const _function4 = createMiddleware(function4);
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Serve static files from the "public" directory
+app.use(express.static('public'));
+
 // Add payload initialization middleware
 app.use((req, res, next) => {
     req.payload = { f1: '', f2: '', f3: '', f4: '' };
