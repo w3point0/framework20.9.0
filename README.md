@@ -61,7 +61,7 @@ Using: node v20.9.0 ECMAScript features
 
 ## Demo Notes  
 - When you start the app you can open an html file that is in the public folder. This will show two buttons
-- At the browser window add the path /stream and you will see a simple not. Please view the console output for verification of the /stream run. See app.mjs get /stream
+- At the browser window add the path /stream and you will see a simple message. Please view the console output for verification of the /stream run. See app.mjs get /stream
 
 ### Secrets 
 Use Codespaces secrets to load environment variables  
