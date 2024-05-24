@@ -31,9 +31,9 @@ app.use((req, res, next) => {
 });
 
 // Define routes
-app.get('/magic', _function1, _function2, _function3, _function4, (req, res) => {
-    logger.info('Magic happened');
-    res.send('Magic happened');
+app.get('/stream', _function1, _function2, _function3, _function4, (req, res) => {
+    logger.info('Viewing stream');
+    res.send('<div style="text-align: center;">See the logger output to verify the function streams were called</div>');
 });
 
 // Global error handler

@@ -58,6 +58,11 @@ Write me unit test using the Native Test Runner features
 Using: node v20.9.0 ECMAScript features
 <paste code here that will be unit tested>
 ```
+
+Demo Notes  
+- When you start the app you can open an html file that is in the public folder. This will show two buttons
+- At the browser window add the path /stream and you will see a simple not. Please view the console output for verification of the /stream run. See app.mjs get /stream
+
 ### Secrets 
 Use Codespaces secrets to load environment variables  
 ![image](https://github.com/w3point0/framework20.9.0/assets/993459/e602e046-1061-4fd6-9be9-7c718ed6dad8)

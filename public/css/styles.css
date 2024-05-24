@@ -1,12 +1,22 @@
 .custom-component {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    color: #333;
-    padding: 20px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    width: fit-content;
-    margin: 20px auto;
-    text-align: center;
-  }
-  
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #333;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: fit-content;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-align {
+  width: 640px;
+  text-align: left;
+}

@@ -54,15 +54,46 @@
       <div class="content">
         <div class="container">
           <div class="wrap">
+            <div class="centered-container">
+              <p class="left-align">
+                Welcome to the thrill ride that is Actions! Imagine this: every action here bursts onto your screen in a
+                Pop-up iframe. It's like your entire window transforms into a stage for our show. And when you're ready
+                to step back? Simply tap that 'x' at the top or smash the escape key. We're all about that iframe life –
+                sleek, full-screen experiences are just a click away. Cheers to the geniuses at W3C for these epic
+                Components! And hey, between us, React's got nothing on simplicity. Embrace the mantra: Save time, slash
+                complexity. Join our revolution!
+              </p>
 
-            <div class="fix-12-12">
-              <button class="button small popupTrigger green" data-popup-id="1">Components</button>
             </div>
+            <div class="fix-12-12">
+              <button class="button small popupTrigger blue" data-popup-id="themonthlyduck">Subscribe, Now!</button>
+            </div>
+            <div class="fix-12-12">
+              <button class="button small popupTrigger green" data-popup-id="1">End of React.js</button>
+            </div>
+
 
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Popup Fullscreen + Vimeo -->
+    <div class="popup fullscreen autoplay" data-popup-id="themonthlyduck">
+      <div class="close button small white left"><svg>
+          <use href="assets/svg/icons.svg#close"></use>
+        </svg>Close</div>
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+            <div class="embedVideo popupContent">
+              <iframe src="https://cdn.forms-content-1.sg-form.com/8164eafa-eb1d-11ee-9b6c-c6b251b4cc35" frameborder="0"
+                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Popup iframe -->
     <div class="popup fullscreen" data-popup-id="1">
@@ -82,6 +113,8 @@
         </div>
       </div>
     </div>
+
+
 
   </div>
   <!-- jQuery 3.6.0 -->
