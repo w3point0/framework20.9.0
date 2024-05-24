@@ -8,6 +8,7 @@ Fun Facts
 - Mongo July 2025. MongoDB 7.0 
 - Debian GNU/Linux 10 (buster) as of 5/23/2024
 - Index.html is only to be used as an API Dashboard
+- No React, Angular or other heavy frame work. Pure HTML and custom components (next wave)
 
 First Things 
 ```
