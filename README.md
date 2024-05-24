@@ -21,15 +21,14 @@ Fun Facts
 - No transpilers, compilers -- just plan old ECMAScript 2023
 - No setup, if you use Codespaces, just npm install
 
-First Things 
-```
-Nothing! If you use Git's Codespaces everything is setup. Talking about infrastructure as code. Dive in.
+### First Things 
 
-> node app.mjs will start the web application. That's all folks.
+- Nothing! If you use Git's Codespaces everything is setup. Talking about infrastructure as code. Dive in.
+- node app.mjs will start the web application. That's all folks.
 
-```
 
-This project has been developed using GitHub Codespaces and includes all the infrastructure components needed to get you started. See .devcontainer for more details.
+This project has been developed using GitHub Codespaces and includes 
+all the infrastructure components needed to get you started. See .devcontainer for more details.
 
 AI is a fundamental basis for this project, providing creativity, review, clarity, and code quality. AI is a developer's best friend.
 
