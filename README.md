@@ -13,7 +13,7 @@ Fun Facts
 - Debian GNU/Linux 10 (buster) as of 5/23/2024
 - Pure HTML and Components
 - No React, Angular or other heavy framework. Pure HTML and custom components (next wave)
-- No Transpilers, compilers -- just plan old ECMAScript 2023
+- No transpilers, compilers -- just plan old ECMAScript 2023
 - No setup, if you use Codespaces, just npm install
 
 First Things 
