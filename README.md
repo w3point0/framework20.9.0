@@ -32,7 +32,7 @@ all the infrastructure components needed to get you started. See .devcontainer f
 
 AI is a fundamental basis for this project, providing creativity, review, clarity, and code quality. AI is a developer's best friend.
 
-## Prompts 
+## Prompts (Your best friend)
 
 Code Prompt
 ```
@@ -65,17 +65,17 @@ Using: node v20.9.0 ECMAScript features
 - When you start the app you can open an html file that is in the public folder. This will show two buttons
 - At the browser window add the path /stream and you will see a simple message. Please view the console output for verification of the /stream run. See app.mjs get /stream
 
-### Secrets 
+### Secrets (Don't let an accident happen)
 Use Codespaces secrets to load environment variables  
 ![image](https://github.com/w3point0/framework20.9.0/assets/993459/e602e046-1061-4fd6-9be9-7c718ed6dad8)
 
 
-### Linter
+### Linter (Pick up your socks and don't keep a messy room)
 ```
 npx eslint model/user.js  
 ```
 
-### Test
+### Test (Code Shift Happens)
 ```
 npm test
 npm run coverage
